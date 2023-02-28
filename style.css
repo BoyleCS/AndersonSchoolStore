@@ -12,6 +12,23 @@ body {
   top: 10px;
 }
 
+#container{
+    display:flex;
+    justify-content:center;
+    background-color:lightblue;
+}
+
+
+#container2{
+margin-top: 20px;
+background-color:lightblue;
+text-align:center;
+}
+
+#container2 img{
+  vertical-align:middle;
+}
+
 .background-image {
   background-image: url("https://andersoneducation.org/wp-content/uploads/2020/03/logo-01.png"), url("https://media.istockphoto.com/id/1160401973/vector/paper-line-vector-background-detailed-lined-paper-texture.jpg?s=612x612&w=0&k=20&c=-xLf0KXwHsRTmV38XgWOHxqKRA1US1uB85Hc0935TME=");
   background-size: 50%;
