@@ -1,1 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link type="text/css" rel="stylesheet" href="../style.css" />
+  <script src="../script.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anderson School Store Webpage</title>
+</head>
+
+<body>
+  <div class="background-image">
+
+    <header>
+      <button class="login" type="button">Sign in</button>
+      <nav>
+        <ul>
+          <li><a href="#">Student News</a></li>
+          <li><a href="#">School Lunch</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="./schoolStore.html">School Store</a></li>
+        </ul>
+      </nav>
+
+      <form>
+        <label>
+          Search
+          <input type="search" id="site-search" name="site-search" />
+        </label>
+      </form>
+
+      <h2>Welcome to the Anderson School Store!</h2>
+      <h3>Current Time: <span id="time"></span></h3>
+    </header>
+    <!-- Loading datatables, a JS library from the CDN -->
+    <script src="<https://code.jquery.com/jquery-3.5.1.js>"></script>
+    <link rel="stylesheet" type="text/css" href="<https://cdn.datatables.net/1.12.1/css/jquery.dataTables.css>">
+    <script type="text/javascript" charset="utf8" src="<https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js>">
+    </script>
+    <script>
+      /*
+      * The line below invokes the getData() function in the Code.gs file, 
+      * It passes the returned data to showData() function
+      */
+      google.script.run.withSuccessHandler(showData).getData();
+
+      // This function leverages the JS datatables lib to render our table to the DOM
+      // using the data the function receives
+      function showData(dataArray) {
+        console.log()
+        $(document).ready(function () {
+          $('#table-data').DataTable({
+            data: dataArray,
+
+            columns: [
+              {"title": "Item Name"},
+              {"title": "Number Available"}
+              {"title": "Price"}
+            ]
+          });
+        });
+      }      
+    </script>
+    <table id="table-data">
+      <!-- showData() function defined above would inject table data here -->
+    </table>
+  </div>
+</body>
+
+</html>
