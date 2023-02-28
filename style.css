@@ -1,0 +1,33 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+html,
+body {
+  margin: 10px;
+  padding: 10px;
+  border: 10px;
+  left: 10px;
+  top: 10px;
+}
+
+.background-image {
+  background-image: url("https://andersoneducation.org/wp-content/uploads/2020/03/logo-01.png"), url("https://media.istockphoto.com/id/1160401973/vector/paper-line-vector-background-detailed-lined-paper-texture.jpg?s=612x612&w=0&k=20&c=-xLf0KXwHsRTmV38XgWOHxqKRA1US1uB85Hc0935TME=");
+  background-size: 50%;
+  margin-left: auto;
+  margin-right: 0;
+  background-repeat: repeat;
+  background-position: 0px 0px;
+}
+
+.login {
+  background-color: #07640a; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
