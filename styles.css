@@ -7,7 +7,6 @@
         font: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
     }
 
-    
     .fixed-header, .fixed-footer{
         width: 100%;
         position: fixed;        
@@ -72,7 +71,7 @@ body {
 
 .wrap {
    overflow: hidden;
-   margin: 100px;
+   margin: 0px;
 }
 .box {
    float: left;
