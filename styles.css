@@ -1,5 +1,4 @@
-
-    /* Add some padding on document's body to prevent the content
+ /* Add some padding on document's body to prevent the content
     to go underneath the header and footer */
     .container{
         width: 90%;
@@ -7,6 +6,7 @@
         font: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
     }
 
+    
     .fixed-header, .fixed-footer{
         width: 100%;
         position: fixed;        
@@ -71,7 +71,7 @@ body {
 
 .wrap {
    overflow: hidden;
-   margin: 200px;
+   margin: 100px;
 }
 .box {
    float: left;
@@ -113,7 +113,7 @@ body {
 }
 
 body.no-touch .boxInner:hover .titleBox, body.touch .boxInner.touchFocus .titleBox {
-   margin-bottom: 10;
+   margin-bottom: 0;
 }
 @media only screen and (max-width : 480px) {
    /* Smartphone view: 1 tile */
